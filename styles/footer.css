@@ -1,6 +1,43 @@
 footer{
     min-width: 350px;
+    background-color: var(--footer-color);
+    max-width: 768px;
+    min-width: 350px;
+
+    .flexatore-divisore{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 3rem 0;
+
+        .generalità{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 40px;
+            color: var(--usually-white);
+        }
+
+        .links{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+
+            a{
+                margin: 0 1rem;
+                line-height: 40px;
+                cursor: pointer;
+                color: var(--usually-white);
+            }
+        }
+    }
 }
+
+
 
 /* #region  mobile-mediaqueries*/
 
@@ -10,7 +47,19 @@ footer{
 
 
 /* #region  tablet-mediaqueries*/
+@media screen and (min-width: 768px){
+    footer{
+        max-width: 100%;
 
+        .flexatore-divisore{
+            padding: 1rem 0;
+
+            .generalità{
+                line-height: 30px;
+            }
+        }
+    }
+}
 /* #endregion  tablet-mediaqueries*/
 
 
@@ -18,5 +67,35 @@ footer{
 
 
 /* #region  desktop-mediaqueries*/
+@media screen and (min-width: 992px){
+    footer{
+        .flexatore-divisore{
+            flex-direction: row;
+            justify-content: space-between;
 
+            .generalità{
+                align-items: flex-start;
+                width: 70%;
+                line-height: 25px;
+
+                p{
+                    font-size: 0.9rem;
+
+                    span{
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .links{
+                justify-content: end;
+
+                a{
+                    font-size: 0.8rem;
+                    margin: 0 0.3rem;
+                }
+            }
+        }
+    }
+}
 /* #endregion  desktop-mediaqueries*/
