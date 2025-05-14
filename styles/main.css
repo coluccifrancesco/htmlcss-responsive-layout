@@ -1,5 +1,8 @@
-section{
+main{
     background-color: var(--bg-color);
+}
+
+section{
     width: 100%;
     min-width: 350px;
 }
@@ -7,8 +10,11 @@ section{
 .titolo{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 10px 0;
+    padding: 15px 0;
+
+    .col{
+        margin-left: -1rem;
+    }
 
     p{
         color: var(--grey-tone);
@@ -17,15 +23,83 @@ section{
 
     h3{
         color: var(--tiramisu-color);
-        font-size:1.5rem;
+        font-size: 1.5rem;
+        margin-top: 8px;
+
+        span{
+            display: none;
+            font-size: 1.5rem;
+        }
     }
 }
 
 .ricetta{
-    .iframe{
+
+    .video{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .elenco{
+        background-color: var(--usually-white);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 4px 4px rgb(221, 221, 221);
+        margin-top: -5px;
+        display: flex;
+        flex-direction: column;
+
+        .dimensioni-elenco{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            
+            .inbreve{
+                padding: 1rem 1rem;
+            }
+    
+            p{
+                font-size: 0.8rem;
+                padding: 0.3rem 1rem;
+    
+                span{
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                }
+    
+                &:last-of-type{
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+.social-and-ad{
+    .social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px auto;
+
+        i{
+            background-color: var(--usually-white);
+            display: flex;
+            justify-content: center;
+            width: 10%;
+            padding: 10px 0;
+            border-radius: 20px;
+            font-size: 1.3rem;
+            box-shadow: 0px 4px 4px rgb(221, 221, 221);
+        }
+    }
+
+    .img-ad{
         width: 100%;
     }
 }
+
+
 
 
 
@@ -82,6 +156,17 @@ section{
 }
 /* #endregion columns */
 
+    .social-and-ad{
+        .social{
+            p{
+                display: none;
+            }
+        }
+
+        .img-ad{
+            display: none;
+        }
+    }
 }
 /* #endregion  mobile */
 
@@ -140,6 +225,36 @@ section{
 }
 /* #endregion columns */
 
+    .dolce{
+        .titolo{
+            span{
+                display: inline-block;
+            }
+        }
+    }
+
+    .ricetta{
+
+
+        .elenco{
+            margin-bottom: 6px;
+
+            .caratteristiche{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .social-and-ad{
+        .social{
+            i{
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
 }
 /* #endregion  tablet-mediaqueries*/
 
@@ -198,6 +313,69 @@ section{
 }
 /* #endregion columns */
 
+    .dolce{
+        .titolo{
+            p{
+                font-size: 1.2rem;
+            }
+
+            h3{
+                font-size: 2rem;
+
+                span{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    .ricetta{
+        .elenco{
+            margin-top: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 10px;
+
+            .dimensioni-elenco{
+
+                .inbreve{
+                    margin: 1rem auto;
+                }
+    
+                .caratteristiche{
+                    margin-top: 1rem;
+                    gap: 1rem;
+
+                    p{
+                        min-width: 100%;
+                        font-size: 1rem;
+    
+                        span{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .video{
+                min-height: 100%;
+            }
+        }
+    }
+
+    .social-and-ad{
+        .social{
+            i{
+                min-width: 15%;
+                max-width: 20%;
+                
+                p{
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+            }
+        }   
+    }
 }
+
 
 /* #endregion  desktop-liaqueries*/
