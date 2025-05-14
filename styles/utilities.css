@@ -3,4 +3,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --title-and-details-color: #FF9614;
+    --bg-color: #F6F5F3;
+    --tiramisu-color: #4D3969;
+    --grey-tone: #A7AAAF;
+    --footer-color: #7C69A4;
+    --usually-white: white;
+    --usually-black: black;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-grow: 1;
 }

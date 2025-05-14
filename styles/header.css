@@ -1,0 +1,29 @@
+/* #region  mobile-mediaqueries*/
+.header-cont{
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--title-and-details-color);
+    font-size: 3rem;
+    margin: 5px 0;
+}
+/* #endregion  mobile-mediaqueries*/
+
+
+
+/* #region  tablet-mediaqueries*/
+
+/* #endregion  tablet-mediaqueries*/
+
+
+
+/* #region  desktop-mediaqueries*/
+
+/* #endregion  desktop-mediaqueries*/
