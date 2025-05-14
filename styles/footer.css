@@ -5,6 +5,7 @@ footer{
     min-width: 350px;
 
     .flexatore-divisore{
+        min-width: 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -17,6 +18,7 @@ footer{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             line-height: 40px;
             color: var(--usually-white);
         }

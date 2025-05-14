@@ -1,5 +1,6 @@
 main{
     background-color: var(--bg-color);
+    padding-top: 70px;
 }
 
 section{
@@ -38,6 +39,32 @@ section{
     .video{
         width: 100%;
         aspect-ratio: 16/9;
+        position: relative;
+    }
+
+    .animation{
+        margin-left: 47%;
+        margin-top: -28.6%;
+        position: absolute;
+        z-index: 400;
+        left: 0;
+        width: 5%;
+        height: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+
+        .fa-youtube{
+            font-size: 270%;
+            color: #FF0032;
+            cursor: pointer;
+            transition: 0.2s;
+    
+            &:hover{
+                font-size: 290%;
+            }
+        }
     }
 
     .elenco{
@@ -91,6 +118,20 @@ section{
             border-radius: 20px;
             font-size: 1.3rem;
             box-shadow: 0px 4px 4px rgb(221, 221, 221);
+            transition: 0.2s;
+
+            &:hover{
+                cursor: pointer;
+                color: var(--title-and-details-color);
+                font-size: 1.8rem;
+                margin-bottom: -0.5rem;
+                rotate: 15deg;
+            }
+
+            &:active{
+                background-color: var(--tiramisu-color);
+                color: var(--title-and-details-color);
+            }
         }
     }
 
@@ -204,6 +245,22 @@ section{
 }
 /* #endregion  mobile */
 
+@media screen and (max-width: 400px) {
+    .ricetta{
+        .animation{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .ricetta{
+        .animation{
+            display: none;
+        }
+    }
+}
 
 
 /* #region  tablet-mediaqueries*/
@@ -283,6 +340,10 @@ section{
     .social-and-ad{
         .social{
             i{
+                &:hover{
+                    rotate: -5deg;
+                }
+
                 p{
                     display: none;
                 }
@@ -417,6 +478,10 @@ section{
             i{
                 min-width: 15%;
                 max-width: 20%;
+
+                &:hover{
+                    rotate: 3deg;
+                }
                 
                 p{
                     display: inline-block;
