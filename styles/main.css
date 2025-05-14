@@ -1,10 +1,38 @@
 section{
     background-color: var(--bg-color);
     width: 100%;
+    min-width: 350px;
 }
 
-/* #region  mobile-mediaqueries*/
-/* #region columns */
+.titolo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    p{
+        color: var(--grey-tone);
+        font-size: 0.8rem;
+    }
+
+    h3{
+        color: var(--tiramisu-color);
+        font-size:1.5rem;
+    }
+}
+
+.ricetta{
+    .iframe{
+        width: 100%;
+    }
+}
+
+
+
+/* #region  mobile */
+@media screen and (max-width: 768px){
+
+    /* #region columns */
 .col-sm-1{
     width: calc(100% / 12 * 1);
 }
@@ -54,16 +82,122 @@ section{
 }
 /* #endregion columns */
 
-/* #endregion  mobile-mediaqueries*/
+}
+/* #endregion  mobile */
 
 
 
 /* #region  tablet-mediaqueries*/
+@media screen and (min-width: 768px) {
+    
+    /* #region columns */
+.col-m-1{
+    width: calc(100% / 12 * 1);
+}
 
+.col-m-2{
+    width: calc(100% / 12 * 2);
+}
+
+.col-m-3{
+    width: calc(100% / 12 * 3);
+}
+
+.col-m-4{
+    width: calc(100% / 12 * 4);
+}
+
+.col-m-5{
+    width: 50%;
+}
+
+.col-m-6{
+    width: calc(100% / 12 * 6);
+}
+
+.col-m-7{
+    width: calc(100% / 12 * 7);
+}
+
+.col-m-8{
+    width: calc(100% / 12 * 8);
+}
+
+.col-m-9{
+    width: calc(100% / 12 * 9);
+}
+
+.col-m-10{
+    width: calc(100% / 12 * 10);
+}
+
+.col-m-11{
+    width: calc(100% / 12 * 11);
+}
+
+.col-m-12{
+    width: 100%;
+}
+/* #endregion columns */
+
+}
 /* #endregion  tablet-mediaqueries*/
 
 
 
 /* #region  desktop-mediaqueries*/
+@media screen and (min-width: 992px){
+    
+    /* #region columns */
+.col-l-1{
+    width: calc(100% / 12 * 1);
+}
 
-/* #endregion  desktop-mediaqueries*/
+.col-l-2{
+    width: calc(100% / 12 * 2);
+}
+
+.col-l-3{
+    width: calc(100% / 12 * 3);
+}
+
+.col-l-4{
+    width: calc(100% / 12 * 4);
+}
+
+.col-l-5{
+    width: 50%;
+}
+
+.col-l-6{
+    width: calc(100% / 12 * 6);
+}
+
+.col-l-7{
+    width: calc(100% / 12 * 7);
+}
+
+.col-l-8{
+    width: calc(100% / 12 * 8);
+}
+
+.col-l-9{
+    width: calc(100% / 12 * 9);
+}
+
+.col-l-10{
+    width: calc(100% / 12 * 10);
+}
+
+.col-l-11{
+    width: calc(100% / 12 * 11);
+}
+
+.col-l-12{
+    width: 100%;
+}
+/* #endregion columns */
+
+}
+
+/* #endregion  desktop-liaqueries*/
