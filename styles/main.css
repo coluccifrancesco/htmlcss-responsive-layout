@@ -1,0 +1,12 @@
+/* font  titolo "Nerko One", cursive*/
+
+.cont{
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col{}
