@@ -20,7 +20,13 @@ h1{
 
 
 /* #region  tablet-mediaqueries*/
-
+@media screen and (min-width: 768px) {
+    .header-cont{
+        max-width: 100%;
+        display: inline-block;
+        margin-left: 2rem;
+    }
+}
 /* #endregion  tablet-mediaqueries*/
 
 
